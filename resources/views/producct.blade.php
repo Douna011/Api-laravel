@@ -68,8 +68,6 @@
                 <td>
                     @if($product->image)
                         <img src="data:{{ $product->image_mime }};base64,{{ $product['image_base64'] }}">
-
-
                     @else
                         <em>No image</em>
                     @endif
