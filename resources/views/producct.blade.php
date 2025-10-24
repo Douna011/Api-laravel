@@ -67,7 +67,8 @@
                 <td>{{ $product->id }}</td>
                 <td>
                     @if($product->image)
-                        <img src="{{ $product->image }}" alt="{{ $product->name }}">
+                        <img src="data:image/jpeg;base64,{{ $product['image'] }}">
+
                     @else
                         <em>No image</em>
                     @endif
